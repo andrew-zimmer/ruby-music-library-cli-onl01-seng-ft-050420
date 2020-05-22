@@ -18,7 +18,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     respond = gets.strip
-    until respond = "exit"
+    while respond != "exit"
       call 
     end 
     binding.pry
