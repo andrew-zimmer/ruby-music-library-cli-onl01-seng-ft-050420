@@ -53,5 +53,10 @@ class MusicLibraryController
     index = respond.to_i - 1 
     songs = Song.all.sort{|a,b| a.name <=> b.name}
     if respond.between?(1,songs.length)
+      "play #{songs[index]}"
+    else 
+      puts "Try again."
+      play_song
+    end 
   end 
 end 
