@@ -49,7 +49,6 @@ class Song
     else 
       @genre = Genre.new(genre)
     end 
-    #@genre.songs << self if !@genre.songs.include?(self)
   end 
   
   def self.new_from_filename(files)
