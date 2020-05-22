@@ -19,7 +19,7 @@ class MusicImporter
       # name = info[0]
       # artist = info[1]
       # genre = info[2].chomp(".mp3")
-      Song.create_by_filename(file)
+      Song.create_from_filename(file)
     end 
   end 
 end 
