@@ -1,3 +1,4 @@
+require 'pry'
 class MusicLibraryController 
   attr_accessor :path
   
@@ -20,6 +21,7 @@ class MusicLibraryController
     until respond = "exit"
       call 
     end 
+    binding.pry
     
   end 
 end 
