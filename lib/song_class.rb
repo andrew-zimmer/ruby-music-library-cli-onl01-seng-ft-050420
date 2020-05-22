@@ -44,7 +44,7 @@ class Song
   def genre=(genre)
     if genre.class == Genre 
       @genre = genre 
-    elsif Genre.find_by_name(genre)
+    elsif Genre.find_or_create_by_name(genre)
       @genre = Genre.find_by_name(genre)
     else 
       @genre = Genre.new(genre)
