@@ -44,5 +44,6 @@ class MusicLibraryController
     puts "Please enter the name of a genre:"
     respond = gets.strip
     genre = Genre.find_by_name(respond)
+    Song.all.select {|song| song.
   end 
 end 
