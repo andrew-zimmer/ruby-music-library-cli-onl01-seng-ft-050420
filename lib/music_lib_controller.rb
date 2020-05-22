@@ -39,5 +39,6 @@ class MusicLibraryController
     artist = Artist.find_by_name(respond)
     if Artist.find_by_name(respond)
       Song.all.select {|song| song.artist.name == artist}.sort{|a,b| a.name <=> b.name}.each.with_index(1){|song, index| puts "#{index}. #{song.name}"}
+    end 
   end 
 end 
