@@ -52,8 +52,6 @@ class MusicLibraryController
     respond = gets.strip
     index = respond.to_i - 1 
     songs = Song.all.sort{|a,b| a.name <=> b.name}
-    if index.between?(0,songs.length-1)
-      "play #{songs[index]}"
-    end 
+    puts "Playing #{songs[index].name} by #{songs[index].artist.name}"
   end 
 end 
