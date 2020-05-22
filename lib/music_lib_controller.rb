@@ -19,8 +19,6 @@ class MusicLibraryController
     puts "What would you like to do?"
     respond = gets.strip
     call if respond != "exit"
-    #binding.pry
-    
   end 
   
   def list_songs 
