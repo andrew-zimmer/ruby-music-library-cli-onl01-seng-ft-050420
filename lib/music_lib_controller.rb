@@ -46,4 +46,9 @@ class MusicLibraryController
     genre = Genre.find_by_name(respond)
     Song.all.select {|song| song.genre == genre}.sort{|a,b| a.name <=> b.name}.each.with_index(1){|song, index| puts "#{index}. #{song.artist.name} - #{song.name}"}
   end 
+  
+  def play_song
+    puts "Pick a ducking song:"
+    respond = gets.strip
+  end 
 end 
