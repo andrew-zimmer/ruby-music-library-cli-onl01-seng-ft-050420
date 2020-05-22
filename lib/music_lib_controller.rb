@@ -19,6 +19,10 @@ class MusicLibraryController
     puts "What would you like to do?"
     respond = gets.strip
     call if respond != "exit"
+    case respond 
+      when "list songs"
+        list_songs 
+      when ""
   end 
   
   def list_songs 
