@@ -50,5 +50,6 @@ class MusicLibraryController
   def play_song
     puts "Pick a ducking song:"
     respond = gets.strip
+    
   end 
 end 
