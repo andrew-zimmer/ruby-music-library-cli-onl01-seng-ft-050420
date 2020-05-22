@@ -49,6 +49,7 @@ class Song
     # else 
     #   @genre = Genre.new(genre)
     # end 
+    @genre = Genre.find_or_create_by_name(genre)
   end 
   
   def self.new_from_filename(files)
