@@ -32,7 +32,7 @@ class Song
    
     if artist.class == Artist  
       @artist = artist 
-    elsif Artist.find_by_name(artist)
+    elsif Artist.find_or_create_by_name(artist)
       @artist = Artist.find_by_name(artist)
     else 
       @artist = Artist.new(artist)
