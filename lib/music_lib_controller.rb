@@ -11,7 +11,7 @@ class MusicLibraryController
     puts "To list all of your songs, enter 'list songs'."
     puts "To list all of the artists in your library, enter 'list artists'."
     puts "To list all of the genres in your library, enter 'list genres'."
-    puts "To list all the "
+    puts "To list all the of the songs by a particular artist, enter 'list artist'."
     respond = gets.strip
   end 
 end 
