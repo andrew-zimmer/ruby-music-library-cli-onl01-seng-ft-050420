@@ -22,4 +22,8 @@ class MusicLibraryController
     #binding.pry
     
   end 
+  
+  def list_songs 
+    Song.all.sort.each.by_index {|song, index| puts "#{index}: #{song}"
+  end 
 end 
