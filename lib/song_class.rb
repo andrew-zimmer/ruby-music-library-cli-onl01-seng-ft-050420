@@ -31,7 +31,7 @@ class Song
   def artist=(artist)
    
     if artist.class == Artist  || Artist.find_by_name(artist)
-      @artist = artist
+      @artist = Artist.find_by_name(artist)
     else 
       @artist = Artist.new(artist)
     end 
