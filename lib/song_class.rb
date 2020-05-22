@@ -58,5 +58,8 @@ class Song
     genre = info[2].chomp(".mp3")
     Song.create(name, artist, genre)
   end 
-
+  
+  def self.create_from_filename(file)
+    
+  end 
 end 
