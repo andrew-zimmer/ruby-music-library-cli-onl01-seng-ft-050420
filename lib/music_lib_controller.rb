@@ -21,7 +21,7 @@ class MusicLibraryController
     while respond != "exit"
       call 
     end 
-    binding.pry
+    #binding.pry
     
   end 
 end 
