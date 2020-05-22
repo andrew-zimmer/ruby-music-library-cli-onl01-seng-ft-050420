@@ -23,6 +23,7 @@ class MusicLibraryController
       when "list songs"
         list_songs 
       when ""
+    end 
   end 
   
   def list_songs 
